@@ -1,0 +1,3 @@
+<button class="btn-info" (click)="getPlanet()">Show list</button>
+<hr>
+<app-planet-item *ngFor="let planetion of planets.results" [planet]="planetion" (planetSelected)="onPlanetSelected(planetion)"></app-planet-item>

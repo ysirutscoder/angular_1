@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-edit (partAdded)="onPartAdded($event)"></app-shopping-edit>
+        <hr>
+        <ul class="list-group" *ngFor="let planetpart of planetParts">
+            <a href="#" class="list-group-item" style="cursor: pointer">{{planetpart.name}} :{{planetpart.amount}}</a>
+        </ul>
+    </div>
+</div>

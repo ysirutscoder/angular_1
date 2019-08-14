@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-planet-list (planetWasSelected)="selectedPlanet = $event"></app-planet-list>
+    </div>
+    <div class="col-md-7">
+        <app-planet-details *ngIf="selectedPlanet; else infoText" [planets]="selectedPlanet"></app-planet-details>
+        <ng-template #infoText>
+            <p>Please selecte something</p>
+        </ng-template>
+    </div>
+</div>
