@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PlanetPartComponent } from './shared/planet-part/planet-part.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PlanetPartComponent } from './shared/planet-part/planet-part.component'
     PlanetItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    PlanetPartComponent
+    PlanetPartComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
